@@ -399,7 +399,7 @@ $(document).ready(function () {
 
 $(document).bind('connect', function (ev, data) {
     var conn = new Strophe.Connection(
-        'https://localhost:5280/http-bind');
+        'https://3.129.13.151:5280/http-bind');
 
     conn.connect(data.jid, data.password, function (status) {
         if (status === Strophe.Status.CONNECTED) {
